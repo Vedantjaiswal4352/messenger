@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+/* Style for the main container */
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the responsive box */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  width: 90%; /* Set a relative width to make it responsive */
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow to make the border visible */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Style for the room input section */
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.room label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.room input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width of the input field */
+}
+
+.room button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.room button:hover {
+  background-color: #3367d6;
+}
+
+/* Style for the sign-out button */
+.sign-out {
+  margin-top: 20px;
+}
+
+.sign-out button {
+  background-color: #d32f2f;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sign-out button:hover {
+  background-color: #b71c1c;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
   }
 }

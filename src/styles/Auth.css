@@ -1,0 +1,36 @@
+/* Auth.css */
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; /* Add a visible border */
+    border-radius: 8px; /* Rounded corners for the box */
+    padding: 20px; /* Add some padding inside the box */
+    max-width: 500px; /* Limit the maximum width of the box */
+    max-height: 200px;
+    margin: 0 auto; /* Center the box horizontally */
+  }
+  
+  .auth p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .auth button {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth button:hover {
+    background-color: #3367d6;
+  }
+  
